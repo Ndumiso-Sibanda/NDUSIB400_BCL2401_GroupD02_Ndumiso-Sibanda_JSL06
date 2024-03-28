@@ -39,9 +39,9 @@ function addToOrder(itemName) {
   listItem.textContent = itemName;
   orderItemsList.appendChild(listItem);
 
-  // Calculate and update the total price (assuming each item costs 10 units)
+  // Calculate and update the total price
   let totalPrice = parseInt(orderTotalElement.textContent) || 0;
-  totalPrice += 10; // Assuming each item costs 10 units
+  totalPrice += 60; // Assuming each item costs 10 units
   orderTotalElement.textContent = totalPrice;
 }
 
