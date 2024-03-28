@@ -1,63 +1,24 @@
-# [JSL06] Submission: CodeCuisine Menu Display System Challenge
+Features
+Displays menu items for Starters, Main Courses, and Desserts.
+Allows users to click on items to add them to the order.
+Calculates and updates the total order price.
+How to Use
+Menu Data: The menu is defined in a JavaScript object named menu. You can edit this object to update the menu items.
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_6_StudentNo_Classcode_Group_Name-Surname_JSL06
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL06] Submission Project Tab.
+Displaying Menu: The displayMenuItems function renders the menu on the webpage. It creates elements for each category and item, and adds event listeners for adding items to the order.
 
-In this coding challenge, you will build a simple menu display system for a fictional UberEats restaurant called "CodeCuisine." The goal is to display different categories of food items and allow users to add items to their order with a click. This challenge will help you apply various JavaScript concepts, including functions, closures, and event handling, to create an interactive menu.
+Adding to Order: Clicking on a menu item adds it to the order list and updates the total price.
 
-![alt text](JSL06-solution.gif)
+Initialization: Call initMenuSystem(menu) to start the menu system.
 
-## Objectives:
-
-- Create and use functions to dynamically populate the menu items on the page.
-- Implement a callback function to handle adding items to the order.
-- Use closures to maintain the state of the order.
-- Utilize function expressions and anonymous functions.
-- Call built-in functions and create custom functions to manage the menu and order system.
-
-## Instructions:
-
-1. **Setup Project Files**: Begin by creating three files: `index.html`, `index.css`, and `index.js`. Link your CSS and JS files to your HTML document.
-
-2. **HTML Structure**: Build the HTML structure for your application. Include placeholders for the menu items and the order summary. Consider using `<div>` elements with appropriate IDs or classes for styling and scripting.
-
-3. **Styling**: Use CSS to style your menu and order summary. Make the user interface visually appealing, and ensure that it's responsive and easy to navigate.
-
-4. **JavaScript Implementation**: Use the provided starter code in `index.js` as a foundation for your application. The starter code contains placeholders for key functions and comments to guide you through the implementation.
-
-    - `menu`: The `menu` object contains sample menu data, including categories and items. You can expand this menu with more items if needed.
-
-    - `displayMenuItems(menu)`: This function should dynamically create and display menu items grouped by category. Iterate over the `menu` object and create HTML elements for each category and item. Attach event listeners to the menu items to handle adding items to the order.
-
-    - `addToOrder(itemName)`: Implement this callback function to update the order summary when an item is added. You can use closures to maintain the state of the order. Calculate and update the total price accordingly.
-
-    - `initMenuSystem(menu)`: Call the `displayMenuItems` function with the menu data and attach event listeners to menu items.
-
-5. **Testing**: Thoroughly test your application to ensure that it correctly filters songs by genre for each Guardian and displays the playlists on the web page. Verify that you can add items to the order and that the order total updates as expected.
-
-## What You Need to Do:
-
-To complete this challenge, follow these steps:
-
-1. Clone the provided Starter Code Repository to your local development environment: [Starter Code Repository](https://github.com/CodeSpace-Academy/Module_6_StudentNo_Classcode_Group_Name-Surname_JSL06).
-2. Open the cloned project in your code editor.
-3. Code your solution following the provided instructions and comments in the starter code.
-4. Commit your changes to your local Git repository with meaningful commit messages.
-5. Push your local Git repository to your GitHub account.
-6. Verify that the changes have been successfully pushed to your GitHub repository.
-
-## What You Need to Include:
-
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
-
-## How We'll Assess Your Work:
-
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
-
-By following these steps and completing the challenge, you will demonstrate your ability to create interactive web applications using JavaScript. Good luck, and enjoy building the CodeCuisine Menu Display System!
+Challenges
+Event Handling: Implementing click event listeners for each menu item.
+Dynamic DOM Manipulation: Creating and updating DOM elements based on user interactions.
+Learning Experience
+DOM Manipulation: Learned how to dynamically create, append, and update DOM elements using JavaScript.
+Event Delegation: Used event delegation to handle events more efficiently.
+Code Organization: Improved code organization by separating concerns into functions.
+Improvements
+Accessibility: Enhance accessibility with ARIA attributes and keyboard navigation.
+Animations: Add animations for a better user experience.
+Responsive Design: Ensure the menu system works well on different devices.
